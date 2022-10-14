@@ -1,0 +1,85 @@
+* {
+  color: white;
+}
+
+.login-container,
+.signup-container {
+  /* background: #001a38;
+  background: -webkit-linear-gradient(to right, #0b325f, #581613);
+  background: linear-gradient(to right, #0b325f, #581613);
+  background-size: cover;
+  height: 100vh; */
+  display: grid;
+  grid-template-columns: 20vw;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.login-container form,
+.signup-container form {
+  background-color: rgba(0, 0, 0, 0.322);
+  display: flex;
+  flex-direction: column;
+  padding: 4vh;
+  margin-top: 30%;
+  height: 50vh;
+}
+
+.login-container form input,
+.signup-container form input {
+  margin-top: 5vh;
+  padding: 1vh;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+.login-container form h1,
+.signup-container form h1 {
+  margin-bottom: 3vh;
+}
+
+.login-container form a,
+.signup-container form a {
+  margin-top: 5vw;
+}
+
+.login-container form a:hover,
+.signup-container form a:hover {
+  color: rgb(152, 152, 255);
+}
+
+.login-container form button,
+.signup-container form button {
+  margin-top: 1vh;
+  border: none;
+  background-color: darkblue;
+  padding: 1.5vh;
+  font-size: 2.75vh;
+  border-radius: 10px 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.login-container form button:hover,
+.signup-container form button:hover {
+  border-radius: 20px 5px;
+  background-color: rgb(0, 0, 255);
+}
+
+.login-container h1.login-title,
+.signup-container h1.login-title {
+  font-size: 75px;
+  margin-top: 5vh;
+}
+
+.login-container form p.alerts,
+.signup-container form p.alerts {
+  transition: all 0.1s ease;
+  color: red;
+}
+
+.signup-container form a {
+  margin-top: 1vw;
+}
