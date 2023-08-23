@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ChatNap</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Media/css/all.css" />
     <script src="script.js" defer></script>
+    <script src="posts.js" defer></script>
+    <link rel="icon" href="./chatnap-logo-clear.png" />
   </head>
   <body>
     <div class="sidebar">
@@ -17,7 +20,7 @@
         <a href="/">
           <li>Home</li>
         </a>
-        <a href="/">
+        <a id="profilebtn" href="/">
           <li>Profile</li>
         </a>
         <a href="/following">
@@ -27,30 +30,61 @@
           <li>Chats</li>
         </a>
       </ul>
+      <div class="user">
+        <img src="./chatnap-logo.png" alt="" />
+        <div class="names">
+          <h2>Millionxsam</h2>
+          <p>@million</p>
+        </div>
+        <i
+          onclick="window.location = '/settings'"
+          class="fa-solid fa-gear settingsBtn"
+        ></i>
+      </div>
     </div>
     <div class="main-box">
       <h1>Home</h1>
-      <div class="post-box">
-        <img src="/chatnap-logo.png" alt="" />
-        <div class="post-container">
-          <div class="post-text-box">
-            <textarea
-              placeholder="Post Something..."
-              cols="30"
-              rows="10"
-              class="post-text"
-            ></textarea>
+      <div class="home">
+        <div class="newpost">
+          <div class="top">
+            <img id="pfp" src="./chatnap-logo.png" alt="" />
+            <textarea placeholder="What's Happening?" id="posttxt"></textarea>
           </div>
-          <div class="post-btns">
-            <div class="comments">
-              <input id="comments" type="checkbox" />
-              <label for="comments">Comments</label>
+          <div class="bottom">
+            <div id="comments">
+              <div id="selected">
+                <i class="fa-solid fa-users"></i>
+                <div>Anyone can comment on this post</div>
+                <i class="fa-solid fa-chevron-down arrow"></i>
+              </div>
+              <dialog open hidden>
+                <div class="option" data-value="enabled">
+                  <i class="fa-solid fa-users"></i>
+                  <div>Anyone can comment on this post</div>
+                </div>
+                <div class="option" data-value="followed">
+                  <i class="fa-solid fa-user-check"></i>
+                  <div>People you follow can comment</div>
+                </div>
+                <div class="option" data-value="followers">
+                  <i class="fa-solid fa-user-plus"></i>
+                  <div>Only your followers can comment</div>
+                </div>
+                <div class="option" data-value="mentions">
+                  <i class="fa-solid fa-at"></i>
+                  <div>Anyone you mention can comment</div>
+                </div>
+                <div class="option" data-value="disabled">
+                  <i class="fa-solid fa-comment-slash"></i>
+                  <div>Comments disabled</div>
+                </div>
+              </dialog>
             </div>
-            <button>Post</button>
+            <button id="postbtn">Post</button>
           </div>
         </div>
+        <div class="border"></div>
       </div>
-      <div class="recent"></div>
     </div>
     <div class="communities">
       <div>Communities</div>

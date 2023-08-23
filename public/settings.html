@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatNap</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Media/css/all.css" />
+    <script src="script.js" defer></script>
+    <script src="posts.js" defer></script>
+    <link rel="icon" href="./chatnap-logo-clear.png" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <a href="/">ChatNap</a>
+      </div>
+      <ul>
+        <a href="/">
+          <li>Home</li>
+        </a>
+        <a id="profilebtn" href="/">
+          <li>Profile</li>
+        </a>
+        <a href="/following">
+          <li>Following</li>
+        </a>
+        <a href="/chats">
+          <li>Chats</li>
+        </a>
+      </ul>
+      <div class="user">
+        <img src="./chatnap-logo.png" alt="" />
+        <div class="names">
+          <h2>Millionxsam</h2>
+          <p>@million</p>
+        </div>
+        <i
+          onclick="window.location = '/settings'"
+          class="fa-solid fa-gear settingsBtn"
+        ></i>
+      </div>
+    </div>
+    <div class="main-box">
+      <h1>
+        <i
+          style="color: var(--btn-color)"
+          class="fa-solid fa-gear settingsBtn"
+        ></i>
+        Settings
+      </h1>
+      <div class="settings">
+        <div class="category">
+          <div class="left">
+            <i class="fa-solid fa-user"></i>
+            <div class="right">
+              <h2>Account</h2>
+              <p>Change settings for your ChatNap account</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+      </div>
+    </div>
+    <div class="communities">
+      <div>Communities</div>
+      <h2>Coming Soon!</h2>
+    </div>
+  </body>
+</html>

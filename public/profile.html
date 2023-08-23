@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ChatNap</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Media/css/all.css" />
     <script src="script.js" defer></script>
+    <script src="profile.js" defer></script>
+    <script src="posts.js" defer></script>
+    <link rel="icon" href="./chatnap-logo-clear.png" />
   </head>
   <body>
     <div class="sidebar">
@@ -29,19 +33,24 @@
       </ul>
     </div>
     <div class="main-box">
-      <h1>Chats</h1>
-      <ul class="list">
-        <li>
-          <img src="/chatnap-logo.png" alt="" />
-          <div>
-            <h2>Name</h2>
-            <p>Bio</p>
+      <div class="profile">
+        <div class="profileHead">
+          <div class="user">
+            <img src="./chatnap-logo.png" alt="" />
+            <div class="info">
+              <h2></h2>
+              <p></p>
+              <p id="followers">73.9M Followers</p>
+            </div>
           </div>
-          <button class="remove-chat">
-            <i class="fa-solid fa-x"></i>
-          </button>
-        </li>
-      </ul>
+          <div class="buttons">
+            <button class="red">Block</button>
+            <button>Message</button>
+            <button>Follow</button>
+          </div>
+        </div>
+        <div class="postsContainer"></div>
+      </div>
     </div>
     <div class="communities">
       <div>Communities</div>
